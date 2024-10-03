@@ -42,13 +42,14 @@ your code will thank you! *cough* Bruce *cough*
 
 % we can save our calculations into variables:
 my_1st_var = "✊✋️✌️";
+% other languages call this a matrix, list, row_vector, etc.
 my_1st_array = ["✊", "✋️", "✌️"];
 
 %% PRINTING VARIABLES
 disp(my_1st_array)
 disp("the 1st element of my array is: " + my_1st_array(1))
 
-%% USING FUNCTIONS
+%% USING BUILT-IN MATLAB FUNCTIONS
 
 % 5 divided by 2 and throw out the remainder/decimal
 ceil_div_ans = ceilDiv(5, 2);
@@ -115,16 +116,21 @@ disp("the sum of 1-10 is: " + running_sum)
 
 %% MATRICES
 
-Matlab is Case Sensitive. a=b  is not the same as a=B
+% Anything in square brackets is a matrix
+row_vector = [1 2 3 4 5 6]
+col_vector = transpose(row_vector)
+two_by_three_matrix = [1 2 3; 4 5 6]
+% ' is the transpose operator, a shortcut for the transpose function
+three_by_two_matrix = two_by_three_matrix'
+% use indices inside parenthesis to get a specific value from a matrix:
+disp("first row, second column of matrix: " + two_by_three_matrix(1, 2))
+% use the colon operate obtain multiple values:
+disp("first row of matrix: " + two_by_three_matrix(1, 1:3))
+% colon by itself to implicitally grab 'all' values from the row
+disp("second row of matrix: " + two_by_three_matrix(2, :)) 
 
-Matrix elements have indices (row number, column number)as in W(i,j) is the value in row i, column j of W
-Square brackets.  Anything in square brackets is a matrix (or vector, which is a 1D matrix
-The colon operator. a:b means from a to b inclusive (or in steps). 
-[1 2 3 4] is a row vector, but [1 2; 3 4] is a 2 by 2 matrix.
-[1 2 3 4]’ is a column vector (the transpose of [1 2 3 4].
-
-Matlab operators such as multiply, divide and raise to a power have two forms: matrix algebra form (*, / and ^) and element-wise form (.*, ./ and .^).  Be careful.
-If x is a row vector, x' is the same numbers transposed to a column vector.  If x is a m-by-n matrix, then x' is its transpose, a n-by-m matrix in which the first row of x becomes the first column of x'.  In general, if y == x', then x(i,j)== y(j,i).
+% Be careful! Matrix operators often have two forms: 
+% matrix algebra form (*, / and ^) and element-wise form (.*, ./ and .^)
 
 %% WRITING FUNCTIONS (must be at the end of the file)
 
