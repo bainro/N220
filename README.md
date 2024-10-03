@@ -1,7 +1,7 @@
 # N220
 Matlab tutorial for graduate students in N220 at UC Irvine.
 
-Download the code by clicking the green code button and then "Download Zip".
+Download the code by clicking the green "<> Code" button and then "Download ZIP".
 
 You can either [download](https://www.mathworks.com/help/install/ug/install-products-with-internet-connection.html) matlab or use the [online](https://matlab.mathworks.com/) version.
 
