@@ -3,7 +3,7 @@ Matlab tutorial for graduate students in N220 at UC Irvine.
 
 You can either [download](https://www.mathworks.com/help/install/ug/install-products-with-internet-connection.html) matlab or use the [online](https://matlab.mathworks.com/) version.
 
-Download this code repository by clicking the green "<> Code" button and then "Download ZIP". Unzip the code, and if you're using the online version, upload it to [matlab's online drive storage](https://drive.mathworks.com/).
+Download this code repository by clicking the green "<> Code" button and then "Download ZIP". Unzip the code and upload it to [matlab's online drive storage](https://drive.mathworks.com/) if you're using the online version.
 
 The following images from lecture are useful to remind yourself how a heteroassociative sequence Lern matrix algorithm works. The intro_to_matlab_2.m script implements such an algorithm.
 
