@@ -125,9 +125,9 @@ three_by_two_matrix = two_by_three_matrix'
 % use indices inside parenthesis to get a specific value from a matrix:
 disp("first row, second column of matrix: " + two_by_three_matrix(1, 2))
 % use the colon operate obtain multiple values:
-disp("first row of matrix: " + two_by_three_matrix(1, 1:3))
+two_by_three_matrix(1, 1:3)
 % colon by itself to implicitally grab 'all' values from the row
-disp("second row of matrix: " + two_by_three_matrix(2, :)) 
+two_by_three_matrix(2, :)
 
 % Be careful! Matrix operators often have two forms: 
 % matrix algebra form (*, / and ^) and element-wise form (.*, ./ and .^)
