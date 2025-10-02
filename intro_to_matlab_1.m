@@ -108,6 +108,7 @@ one_thru_ten = 1:1:10;
 % we'll use this variable to add up the array elements
 running_sum = 0;
 
+% @TODO expand this out first to show the silly way
 for individual_array_element = one_thru_ten
   running_sum = running_sum + individual_array_element;
 end
