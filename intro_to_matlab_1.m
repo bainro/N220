@@ -7,6 +7,7 @@ clear all; close all; clc;   % clear vars, close figs, clear command window
 %% COMMENTS
 % <-- comments in matlab start with this symbol
 % everything after '%' on this line is ignored. 
+
 %{
 This is a multi-line comment.
 So this line is ignored by matlab too.
@@ -87,14 +88,22 @@ else
 end
 
 %% FOR LOOPS
-% another way to create an array
-one_thru_ten = 1:1:10; 
+% another way to create an array of numbers
+one_thru_four = 1:1:4;
 % we'll use this variable to add up the array elements
 running_sum = 0;
-for individual_array_element = one_thru_ten
+% note all the repitition!
+running_sum = running_sum + one_thru_four(1);
+running_sum = running_sum + one_thru_four(2);
+running_sum = running_sum + one_thru_four(3);
+running_sum = running_sum + one_thru_four(4);
+
+% for loops are great to avoid repitition
+running_sum = 0;
+for individual_array_element = one_thru_four
   running_sum = running_sum + individual_array_element;
 end
-disp("the sum of 1-10 is: " + running_sum)
+disp("the sum of 1-4 is: " + running_sum)
 
 %% MATRICES
 % Anything in square brackets is a matrix
